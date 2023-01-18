@@ -7,7 +7,7 @@ from flask import Flask
 from flask import request
 denoise = Flask(__name__)
 
-@amd.route('/', methods=['GET'])
+@denoise.route('/', methods=['GET'])
 def denoisify():
 
     dest = request.args.get('Dest')
